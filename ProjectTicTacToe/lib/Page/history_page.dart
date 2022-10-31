@@ -82,7 +82,7 @@ class _HistoryState extends State<HistoryPage> {
       length: 4,
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.purple ,
+          backgroundColor:  Color(0xFF072F71),
           bottom:  TabBar(
             tabs: [
               Tab(text: "3x3"),
@@ -100,8 +100,10 @@ class _HistoryState extends State<HistoryPage> {
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
                     colors: [
-                      Color(0xFF701ebd),
-                      Color(0xFFfe4a97),
+                      // Color(0xFF701ebd),
+                      // Color(0xFFfe4a97),
+                      Color(0xFF02021A),
+                      Color(0xFF072F71),
                     ],
                     begin: Alignment.topLeft,
                     end: Alignment.bottomCenter,
@@ -112,8 +114,10 @@ class _HistoryState extends State<HistoryPage> {
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
                     colors: [
-                      Color(0xFF701ebd),
-                      Color(0xFFfe4a97),
+                      // Color(0xFF701ebd),
+                      // Color(0xFFfe4a97),
+                      Color(0xFF02021A),
+                      Color(0xFF072F71),
                     ],
                     begin: Alignment.topLeft,
                     end: Alignment.bottomCenter,
@@ -124,8 +128,10 @@ class _HistoryState extends State<HistoryPage> {
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
                     colors: [
-                      Color(0xFF701ebd),
-                      Color(0xFFfe4a97),
+                      // Color(0xFF701ebd),
+                      // Color(0xFFfe4a97),
+                      Color(0xFF02021A),
+                      Color(0xFF072F71),
                     ],
                     begin: Alignment.topLeft,
                     end: Alignment.bottomCenter,
@@ -136,8 +142,10 @@ class _HistoryState extends State<HistoryPage> {
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
                     colors: [
-                      Color(0xFF701ebd),
-                      Color(0xFFfe4a97),
+                      // Color(0xFF701ebd),
+                      // Color(0xFFfe4a97),
+                      Color(0xFF02021A),
+                      Color(0xFF072F71),
                     ],
                     begin: Alignment.topLeft,
                     end: Alignment.bottomCenter,
@@ -156,8 +164,10 @@ class _HistoryState extends State<HistoryPage> {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            Color(0xFF701ebd),
-            Color(0xFFfe4a97),
+            // Color(0xFF701ebd),
+            // Color(0xFFfe4a97),
+            Color(0xFF02021A),
+            Color(0xFF072F71),
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomCenter,
@@ -222,8 +232,10 @@ class _HistoryState extends State<HistoryPage> {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            Color(0xFF701ebd),
-            Color(0xFFfe4a97),
+            // Color(0xFF701ebd),
+            // Color(0xFFfe4a97),
+            Color(0xFF02021A),
+            Color(0xFF072F71),
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomCenter,
@@ -288,8 +300,10 @@ class _HistoryState extends State<HistoryPage> {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            Color(0xFF701ebd),
-            Color(0xFFfe4a97),
+            // Color(0xFF701ebd),
+            // Color(0xFFfe4a97),
+            Color(0xFF02021A),
+            Color(0xFF072F71),
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomCenter,
@@ -354,8 +368,10 @@ class _HistoryState extends State<HistoryPage> {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            Color(0xFF701ebd),
-            Color(0xFFfe4a97),
+            // Color(0xFF701ebd),
+            // Color(0xFFfe4a97),
+            Color(0xFF02021A),
+            Color(0xFF072F71),
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomCenter,

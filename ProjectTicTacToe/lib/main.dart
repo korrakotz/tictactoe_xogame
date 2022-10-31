@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
       title: 'GAME TIC TAC TOE',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        fontFamily: 'Kannit',
       ),
       home: const MyHomePage(title: 'GAMETICTACTOE_Page'),
       debugShowCheckedModeBanner: false,
@@ -47,8 +48,10 @@ class _MyHomePageState extends State<MyHomePage> {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFF701ebd),
-              Color(0xFFfe4a97),
+              // Color(0xFF701ebd),
+              // Color(0xFFfe4a97),
+              Color(0xFF02021A),
+              Color(0xFF072F71),
             ],
             begin: Alignment.topLeft,
             end: Alignment.bottomCenter,
@@ -59,16 +62,27 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Image.network('https://cdn.dribbble.com/users/1737220/screenshots/9185255/media/681935e296d28fc0925a966342306c67.jpg?compress=1&resize=400x300'),
+              GestureDetector(
+                  onTap: () {
+
+                  },
+                  child: Image(
+                    image: AssetImage('assets/img/logo.png'),
+                    fit: BoxFit.cover,
+                    height: 300,
+                  )
+              ),
+            SizedBox(height: 50),
+            //  Text("เกมXO",style: TextStyle(fontSize:50,color:Colors.white,fontWeight: FontWeight.bold)),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
                   width: double.infinity,
                   height: 50,
                   child: ElevatedButton(
-                    child: Text('เริ่มเกม',style: TextStyle(color:Colors.white,fontWeight: FontWeight.bold)),
+                    child: Text('เริ่มเกม',style: TextStyle(color:Colors.white,fontWeight: FontWeight.bold, fontFamily: 'Kannit' )),
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.orange,
+                      primary: Colors.blue.shade600,
                       textStyle: const TextStyle(
                           color: Colors.white,
                           fontSize: 25,
@@ -88,9 +102,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   width: double.infinity,
                   height: 50,
                   child: ElevatedButton(
-                    child: Text('ประวัติการเล่น',style: TextStyle(color:Colors.white,fontWeight: FontWeight.bold)),
+                    child: Text('ประวัติการเล่น',style: TextStyle(color:Colors.white,fontWeight: FontWeight.bold, fontFamily: 'Kannit')),
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.black,
+                      primary: Colors.pink.shade500,
                       textStyle: const TextStyle(
                           color: Colors.white,
                           fontSize: 25,

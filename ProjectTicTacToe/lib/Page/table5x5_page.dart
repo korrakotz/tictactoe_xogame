@@ -45,8 +45,10 @@ class _Table5x5State extends State<Table5x5Page> {
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Color(0xFF701ebd),
-                Color(0xFFfe4a97),
+                // Color(0xFF701ebd),
+                // Color(0xFFfe4a97),
+                Color(0xFF02021A),
+                Color(0xFF072F71),
               ],
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
@@ -94,6 +96,13 @@ class _Table5x5State extends State<Table5x5Page> {
                   )),
             ],
           ))),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          showrules();
+        },
+
+        child: const Icon(Icons.info,size: 55),
+      ),
     );
   }
 
@@ -283,6 +292,7 @@ class _Table5x5State extends State<Table5x5Page> {
   void showEndGameDialog(int winner) {
     // flutter defined function
     showDialog(
+      barrierDismissible: false,
       context: context,
       builder: (BuildContext context) {
         // return object of type Dialog
@@ -321,6 +331,7 @@ class _Table5x5State extends State<Table5x5Page> {
   void showEndGameByDrawDialog() {
     // flutter defined function
     showDialog(
+      barrierDismissible: false,
       context: context,
       builder: (BuildContext context) {
         // return object of type Dialog
@@ -351,7 +362,28 @@ class _Table5x5State extends State<Table5x5Page> {
       },
     );
   }
-
+  void showrules() {
+    // flutter defined function
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        // return object of type Dialog
+        return AlertDialog(
+            content: Column(mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  Text("กติกา", style: TextStyle(
+                      fontSize: 32,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold)),
+                  Text("คุณต้องวาง X หรือ O ติดต่อกัน4ตัว เพื่อชนะเกม", style: TextStyle(
+                      fontSize: 25,
+                      color:  Color(0xFF072F71),
+                      fontWeight: FontWeight.w600)),
+                ])
+        );
+      },
+    );
+  }
   playAgain() {
     setState(() {
       currentTurn = VALUE_X;

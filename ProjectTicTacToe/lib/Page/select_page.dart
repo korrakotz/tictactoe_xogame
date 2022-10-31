@@ -21,8 +21,10 @@ class _SelectPageState extends State<SelectPage> {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFF701ebd),
-              Color(0xFFfe4a97),
+              // Color(0xFF701ebd),
+              // Color(0xFFfe4a97),
+              Color(0xFF02021A),
+              Color(0xFF072F71),
             ],
             begin: Alignment.topRight,
             end: Alignment.bottomCenter,
